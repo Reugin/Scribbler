@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffeedd;
+    background-image:none !important;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.post_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw auto;
+    margin: 1em 0;
+}
+
+/* first post */
+.post_1,
+.post_2,
+.post_3,
+.post_4,
+.post_5 {
+    display: flex;
+    align-items: center;
+    width:40% ;
+    height: 11em ;
+    margin: 1em;
+    font-size: smaller;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    font-family: sans-serif;
+
+}
+
+.post_1:hover,
+.post_2:hover,
+.post_3:hover,
+.post_4:hover,
+.post_5:hover {
+    /* margin-bottom: 2px; */
+    margin-top: 2px;
+    scale: 1.01;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+}
+
+/* ################################################################################ */
+.creaters_name {
+    background-color: white;
+    height: 100%;
+    width: auto;
+    padding: 0 1em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(201, 201, 201);
+    padding: 0 0.8em;
+
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title p {
+    padding: 0.3em;
+    color: rgb(94, 94, 94);
+    font-size: 1.15em;
+}
+
+.title span {
+    margin: 1em;
+    cursor: pointer;
+}
+
+.content p {
+
+    margin: 0.5em 0;
+
+}
+
+.para {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.delete_1,
+.delete_2,
+.delete_3,
+.delete_4,
+.delete_5 {
+    opacity: 0.5;
+}
+
+.delete_1:hover,
+.delete_2:hover,
+.delete_3:hover,
+.delete_4:hover,
+.delete_5:hover {
+    scale: 1.15;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ellipsis_1,
+.ellipsis_2,
+.ellipsis_3,
+.ellipsis_4,
+.ellipsis_5{
+    text-align: end;
+    padding: 0.2em 1em;
+    font-size: medium;
+}
+
+.ellipsis_1 a i:hover,
+.ellipsis_2 a i:hover,
+.ellipsis_3 a i:hover,
+.ellipsis_4 a i:hover,
+.ellipsis_5 a i:hover {
+    cursor: pointer;
+    scale: 1.5;
+}
+
+/* for delete posts */
+#back{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.delete_post {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    text-align: center; 
+    background-color: white;
+    padding: 0em 0;
+    height: 22%;
+    width: 30%;
+    font-size: larger;
+    box-shadow: 0 5px 30px 1px black;
+    z-index: 1;
+}
+
+.del_btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.del_btns button {
+    margin: 1em 2em;
+    padding: 0.5em 2em;
+    color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.del_btns button:hover {
+    scale: 1.05;
+}
+
+.del_btns button:active {
+    scale: .95;
+    transition: .2s ease;
+}

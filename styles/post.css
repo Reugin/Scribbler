@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Ysabeau:ital,wght@1,500&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image:none !important;
+
+}
+
+/* All container */
+.post_container {
+    margin: 2em;
+}
+
+/* Heading */
+#post_heading {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border:  solid white;
+}
+
+/* creaters name and edit butoon display */
+.name_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#creater_name {
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 25px;
+}
+
+#edit_btn,
+#save_btn {
+    background-color: red;
+    padding: 0.3em 0.8em;
+    border: none;
+    color: white;
+  
+    font-family: 'Ysabeau', sans-serif;
+    font-size: large;
+}
+#edit_btn:hover,
+#save_btn:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+#edit_btn:active,
+#save_btn:active{
+    scale: 0.95;
+    transition: .2s ease;
+}
+
+#save_btn {
+    display: none;
+}
+
+/* post text area */
+#post_text {
+    font-size: smaller;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid white;
+    text-align: justify;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    resize: none;
+}
+
+/* like button */
+.like_div {
+    display: flex;
+    align-items: center;
+    margin-block: 1em;
+    padding: 0.5em;
+    background-color: red;
+    width: fit-content;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.like_div:hover {
+scale: 1.05;
+}
+
+.like_div:active{
+    scale: 0.95;
+    transition: .2s ease;
+}
+
+.like_div i {
+    background-color: red;
+
+}
+
+#like_btn {
+    background-color: red;
+    border: none;
+    color: white;
+    font-family: 'Ysabeau', sans-serif;
+    cursor: pointer;
+}
+
+#all_likes {
+    opacity: .6;
+}
+
+/* COMMENT AREA */
+
+#comment_box{
+    outline: none;
+    width: 800px;
+}
+
+#comment_btn{
+    background-color: red;
+    padding: 0.2em 0.8em;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: large;
+    margin-top: 0.5em;
+    border-radius: 2px;
+}
+#comment_btn:hover {
+    scale: 1.05;
+    }
+    
+#comment_btn:active{
+        scale: 0.95;
+        transition: .2s ease;
+}
+
+#all_comments{
+    padding: 0.6em 0.3em;
+    width: 800px;
+    background: rgba(150, 150, 150,0.4);
+}
+
+#all_comments li {
+    list-style: none;
+    padding: 0.4em;
+    border-radius: 2px;
+    margin-block: 0.4em;
+    background-color: white;
+}
